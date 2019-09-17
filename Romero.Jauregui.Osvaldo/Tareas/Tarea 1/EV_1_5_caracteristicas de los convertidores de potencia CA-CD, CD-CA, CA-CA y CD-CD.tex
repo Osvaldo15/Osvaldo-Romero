@@ -1,0 +1,59 @@
+\documentclass[08pt]{article}
+%Gummi|065|=)
+\title{\textbf{Caracteristicas de los convertidores de potencia CA-CD, CD-CA, CA-CA y CD-CD}}
+\author{Osvaldo Romero Jauregui\\}
+\date{}
+\begin{document}
+
+\maketitle
+
+\section{Convertidores CA-CD}
+El convertidos CA-CD nos proporciona una señal de salida rectificada (casi constante) de valor VM, donde VM es igual al valor pico del voltaje de entrada.
+
+\textbf{Controlados:} En los circuitos rectificadores se puede sustituir total o parcial a los diodos por tiristores, obteniendo un sistema de rectificación controlado (formados unicamente por tiristores) o semicontrolados (formado por tiristores y diodos).
+
+La puerta es la encargada de controlar el paso de corriente entre el anodo y el catodo. Funciona básicamente como un diodo rectificador controlado, permitiendo circular la corriente en un solo sentido.
+
+\textbf{No controlados:} No se puede controlar la magnitud de la tension continua, que será siempre fija. Se construyen con diodos.
+
+
+
+\section{Convertidores CD-CA}
+Los convertidores de CD se conocen como inversores. La función de un inversor es cambiar el voltaje de entrada en Corriente Directa (CD) a un voltaje simétrico de salida en Corriente Alterna (CA), con la magnitud y frecuencias deseadas. En los inversores  ideales, las formas de onda de voltaje de salida deberían ser senoidales. Sin embargo, en los inversores reales no son senoidales y contienen ciertas armónicas.
+
+La entrada puede ser una bateria, una celda de combustible, una celda solar u otra fuente de CD. Las salidas \textbf{Monofasicas} típicas son 120V a 60 Hz, 220V a 50 Hz y 115V a 400 Hz. Para sistemas \textbf{Trifásicos} de alta potencia, las salidas típicas son 220/380 V a 50 Hz, 120/208 V a 60 Hz y 1150/200 V a 400 Hz.
+En los inversores, las formas de onda de voltaje de salida deberían ser senoidales. Sin embargo, en los inversores reales no son senoidales y contienen ciertas armónicas. Para aplicaciones de baja y mediana potencia, se pueden aceptar los votajes de onda cuadrada o casi cuadrada; para aplicaciones de alta potencia, son necesarias las formas de onda de baja distorsión. Dada la disponibilidad de los dispositivos semiconductores de potencia de alta velocidad, es posible reducir significativamente el contenido armónico del voltaje de salida mediante diversas tencicas de conmutación.
+
+\textbf{Inversor monofásico de medio puente:} Es un inversor con dos interruptores, donde la tensión aplicada a la carga se divide a la mitad mediante un  divisor de tensión capacitivo.
+Este inversor puede generar una salida de onda cuadrada o una salida bipolar con modulación por ancho de pulsos.
+
+\textbf{Inversor monofásico de puente completo:} Está formado por cuatro pulsadores. Cuando los primeros 2  transistores se activan simultaneamente, el voltaje de entrada aparece através de la carga. Si los otros dos transistores se activan al mismo tiempo, el voltaje a través de la carga se invierte, y adquiere el valor de VS (voltaje de salida).
+
+\textbf{Inversor Trifásico:} El objetivo de un inversor trifásico es generar energía  eléctrica de corriente alterna a partir de  una fuente de energía de corriente continua, con magnitudes y frecuencias deseadas.
+
+
+\section{Convertidores CA-CA}
+Cuando solo se altera el valor de la tensión (CA), tenemos los llamados reguladores de  tensión alterna (o reguladores de potencia alterna) y los que permiten obtener una salida con frecuencia distinta a la presente en la entrada, son los cicloconvertidores.
+
+
+\textbf{Convertidores Matriciales:} Es un convertidor CA-CA trifásico que consiste en un arreglo de interruptores bi-direccionales que conectan una carga trifásica directamente a la línea de alimentación trifásica.
+El elemento clave en el CM es el control de los interruptores bi-direccionales que operan a alta frecuencia. Estos son controlados de tal manera que el CM puede suministrar a la carga un voltaje de amplitud y frecuencia variables.
+Los voltajes de salida son generados a través de patrones de modulación PWM (Pulse Width Modulation, Modulacion por Ancho de Pulso), similares a los utilizados en los inversores convecionales, excepto por que la entrada es una fuente de alimentación trifásica en lugar de voltaje constante de CD.
+
+\textbf{Ciclo Controladores:} Considerando un circuito alimentado por una fuente de alterna. Si entre la fuente de alimentación y la carga se conecta un interruptor implementado como un tiristor, el flujo de potencia transmitido a la carga puede controlarse variando el valor eficaz de la tensión aplicada a la misma. Un circuito de potencia de tales características recibe el nombre de convertidor de tensión alterna.
+
+
+
+\section{Convertidores CD-CD} 
+
+Los convertidores de potencia son dispositivos que nos ayudan en la transformación de la energía eléctrica que se toma de la red, en otro tipo de energía eléctrica requerida para una tarea especial
+
+\textbf{Convertidor Buck:} Los convertidores reductores (Buck o step down) son parte integral de muchos equipos electrónicos actuales. Estos permiten reducir un voltaje continuo (generalmente no regulado) a otra menor magnitud (regulado). Basicamente estan formados por una fuente DC, un dispositivo de conmutación y un filtro pasabajos que alimentan a una determinada carga.
+Este destaca por su simplicidad y su elevado rendimiento. Es el mas fundamental de los coveritidores de CD-CD. Introduce la relación U=SE. Permite un rizado bajo la relacion de salida y es facil de estabilizar cunado trabaja en lazo cerrado y permite una facil proteccion frente a cortocircuitos y de limite de corriente.
+
+\textbf{Convertidor Boost (elevador)} Destaca por su simplicidad u elevado rendimiento, aunque es dificil de  estabilizar en lazo cerrado presentando, ademas, una respuesta transitoria de baja calidad. Su caracteristica elevadora de tensión se ve fuertemente mermada por la resistencia en CC de la inductancia. El rizado de la tensión de salida es peor que en el reductor y las corrientes eficaces que soportan los semiconductores son, asimismo, mas elevadas
+
+
+\footnote{https://www.arrow.com/es-mx/research-and-events/articles/types-of-switching-dc-dc-converters} \&\footnote{http://nfb.com.mx/producto-convertidores-ca-cd.html} \&\footnote{https://www.arrow.com/es-mx/research-and-events/videos/inverter-vs-converter-vs-rectifier-vs-transformer}
+
+\end{document}

@@ -1,0 +1,39 @@
+\documentclass[11pt]{article}
+%Gummi|065|=)
+\title{\textbf{EV\_1\_6\_Explicar\_la\_operacion\_de\_los\_circuitos\_de
+\_activacion\_con\_tiristores\_en\_convertidores\_CA-CD\_y\_CA-CA}}
+\author{Osvaldo Romero Jauregui\\
+		Sistemas electronicos de interfaz\\
+		Mecatronica 4to A}
+\date{}
+\begin{document}
+
+\maketitle
+
+\section{Tiristores:}
+Los tiristores son una familia de dispositios semiconnductores de cuatro capas (pnpn), que se utilizan para controlar grandes cantidades de corriente mediante circuitos electronicos de bajo consumo de potencia.
+
+\section{Activacion:}
+Un tiristor se comporta como un diodo cuando se aplica una corriente de puerta por el terminal. El proceso de activacion requiere que se cumplan dos condiciones: 1.- Debe aplicarse una intensidad de control en el terminal de puerta. Dicha intensidad debe tener condiciones de amplitud y duracion determindas. 2.- En el momento de aplciar la intensidad de control en el terminal de puerta, la intensidad anodo-catodo debe ser positiva.
+
+Una vez que un tiristor se ha activado y pasa a la condicion de conduccion, asi permanece hasta que la intensidad del anodo-catodo se vuelven negativas. Esto have que si la intensidad de amodo-catodo es tipo alterna, el tiristor conmuta automaticamente del estado de conduccion al de bloquea cada vez que dicha intensidad cambien de signo.
+El tiristor permite un control externo de activacion, sin embargo, se desactiva automaticamente en las mismas condiciones en las que un diodo pasa a estado de bloqueo.
+
+
+\section{Rectificador de media onda}
+Un rectificador es el elemento o circuito que permite convertir la corriente alterna (CA) en corriente continua (CD). Esto se realiza utilzando tiristor rectificadores, ya sean semiconductores de estado solido, valvulas de vacio.
+
+\textbf{Circuito rectificador de media onda controlada:}             		
+Estan construidos con un tiristor ya que este puede mantener el flujo de corriente en una sola direccion, se puede utilizar para cambiar una senal de CA a una de CD. Cuando la tension de entrada es positiv, el tiristor se polariza en directo. Si la tension de entrada es negativa el tiristor se polariza en inverso. Por tanto cuando el tiristor se polariza en directo (conduccion), y se aplica un disparo en puerta del tiristor la tension de salida a traves de la carga se puede hallar descontando la caida de tension en el tiristor.
+
+
+\section{Activacion o disparo y bloqueo de los tiristores:}
+El tiristor es un dispositivo de estado solido que su modo de operacion emula a un Relay. En estado de conduccion tiene una impedancia muy baja que permite circular grandes de niveles de corriente con una tension anodo-catodo de 1V. En estado de cortem la corriente es practicamente nula y se comporta como un circuito abierto.
+
+\textbf{Activacion o disparo por puerta}
+El metodo mas comun para disparar un iristor es la aplicacion de una corriente en su puerta. Los niveles de tension y corriente de dispara en la puerta deben tener un rango de valores comprendidos dentro de una zona de disparo de seguridad. Si se sobrepasa ese limite puede no dispararse el tiristor o puede deteriorarse el dispositivo; por ejemplo, para el 2N5060 la maxima potencia eficaz ue puede soportar la puerta es PG(av)=0,01W.
+
+
+\footnote{https://unicrom.com/disparo-de-tiristor-por-puerta/}\&\footnote{https://es.wikiversity.org/wiki}
+
+\end{document}

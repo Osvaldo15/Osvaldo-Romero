@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+%Gummi|065|=)
+\title{\textbf{EV\_2\_2\_Explicar\_los\_arreglos\_y\_parametros
+\_de\_los\_Amplificadores\_Clase\_A}}
+\author{Osvaldo Romero Jauregui\\
+		4A Mecatronica\\
+		Sistemas de interfaz}
+\date{01/Oct/2019}
+\begin{document}
+
+\maketitle
+
+\section{Amplificadores}
+Los amplificadores emisores comunes son el tipo de amplificador mas comunmente usado, ya que pueden tneer una ganab¿ncia de voltaje muy grande.
+Los amplificadores Common Emitter (EC) estan diseñados para producir gran oscilacion de voltaje de salida desde un votaje de señal de entrada relativamente pequeño de solo unos pocos milivoltios y se usan principalmente como "amplificadores de pequeña señal".
+Algunas veces se requiere un amplificador para manejar grandes cargas resistivas como un altavoz o para conducir un motor en un robot, para este tipo de aplicaciones se requieren Amplificadores de potencia.
+
+
+
+
+\section{Amplificadores Clase A}
+El amplificador de clase A es la forma mas simple de amplificador de potencia que utiliza un solo trnasistor de conmutacion en la configuracion de circuito de emisor comun estandar. El transistor siempre esta polarizado en "ON" para que conduzca durante un ciclo completo de la forma de onda de la señal de entrada, produciendo la minima distorsion y la maxima amplitud de la señal de salida.
+Esto significa que la configuracion del amplificador de clase A es el odo de funcionamiento ideal, ya que no puede haber distorsion de cruce o desconexion a la forma de onda de salida incluso durante la mitad negativa del ciclo. Las etapas de salida del amplificador de potencia de clase A pueden usar un unico transistor de potencia o pares de transistores conectados entre si para compartir la corriente de alta carga.
+
+\textbf{Circuito amplificador de una sola etapa:} Este es el tipo mas simple de circuito amplificador de potencia Clase A. Utiliza un transistor de extremo unico para su etapa de salida con la carga resistiva conectada directamente al terminal colector. Cuando el transistor se "enciende", se hunde la corriente de salida a traves del colector, lo que resulta en una caida de voltaje inevitable a traves de la resistencia del emisor, limitando asi la capacidad de salida negativa.
+ 
+Otra forma simple de aumentar la capacidad de manejo actual del circuito mientras que al mismo tiempo se obtiene una mayor ganancia de potencia es reemplazar el transistor de salida simple con un \textbf{transistor Darlington}. 
+\textbf{Configuraciones del transistor Darlington:} La ganancia total Beta o el valor de hfe de un dispositivo Darlington es el producto de las dos ganancias individuales de los transistores multiplicadas juntas  valores de Beta muy elevados junto con altas corrientes de collector son posibles en comparacion con un solo circuito de transistor.
+ 
+
+\footnote{http://tutorialesdeelectronicabasica.blogspot.com/2018/06/el-amplificador-de-clase-es-un.html}
+
+\end{document}

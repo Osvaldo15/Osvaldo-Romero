@@ -1,0 +1,30 @@
+\documentclass[11pt]{article}
+%Gummi|065|=)
+\usepackage[spanish, activeacute]{babel} %Definir idioma español
+\usepackage[utf8]{inputenc} %Codificacion utf-8
+
+\title{\textbf{EV\_2\_7\_Diseño de una modulacion de ancho de pulso (PWM) con amplificadores operacionales y transistores}}
+\author{Osvaldo Romero Jauregui\\
+		4-A Mecatrónica\\
+		Sistemas Electrónicos de interfaz }
+\date{22/Oct/2019}
+\begin{document}
+
+\maketitle
+
+\section{Modulación de ancho de pulso (PWM)}
+La modulación de ancho de pulso(PWM, por sus siglas en inglés) de una señal es una técnica que logra producir el efecto de una señal analogica sobre una carga, a partir de la variación de la frecuencia y ciclo de trabajo de una señal digital. El ciclo de trabajo describe la cantidad de tiempo que la señal está en un estado lógico alto, como un porcentaje del tiempo total que este toma para completar un iclo completo. La frecuencia determina que tan rápido se completa un ciclo (por ejemplo: 1000 Hz corresponde a 1000 ciclos en un segundo), y por consiguiente que tan rápido y con un cierto ciclo de trabajo, la salida parecerá comportarse como una señal analógica constante cuento esta está siendo aplicada a algún dispositivo.
+
+Es un tipo de señal de voltaje utilizada para enviar informacion o para modificar la cantidad de energía que se envía a una carga. Este tipo de señales es muy utilizada en circuitos digitales que necesitan emular una señal analógica.
+Este tipo de señales son de tipo cuadrada o sinusiodales en las cuales se les cambia el ancho relativo respecto al periodo de la misma, el resultado de este cambio es llamado ciclo de trabajo y sus unidades están representadas en términos de porcentaje.
+
+Para construir un PWM la forma común es utilizando un comparador con dos entradas y una salida. Una entrada queda libre para la señal moduladora y la otra entrada se conecta a un oscilador de onda triangular, a la salida de frecuencia es por lo general igual a la de la señal triangular a la entrada y el ciclo de trabajo está en función de la portadora.
+
+Una desventaja importante dentro de estos circuitos es que se pueden dar interferencias generadas po radiofrecuencia. Este tipo de interferencias en el circuito pueden minimizarse ubicando el controlador cerca de la carga y realizando un filtrado de la fuente de alimentación.
+
+Un modulador de ancho de pulso puede a su vez utilizarse como un eficiente dimmer de luz, o también se puede utilizar para controlar los motores de Corriente Directa. Los motores de Coriente Directa grandes son controlados de manera más eficiente con transistores de alta potencia, mientras que por otro lado puede que los motores de Corriente Directa pequeños y medianos de imán permanente se pueden controlar de una mejor manera utilizando transistores de conmutación por ancho de pulso 
+
+
+
+
+\end{document}
